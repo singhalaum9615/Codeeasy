@@ -512,21 +512,31 @@ nav a {
 }
 
 .event2{
+    font-family: 'Secular One', sans-serif;
     display: inline-block;
-    width: 30%;
+    width: 30vw;
     height: 33vw;
     background-color: #3f3f3f;
     border-radius: 20px;
     color: white;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1vw;
+    font-size: 1.3vw;
 }
 
 .event3{
+    font-family: 'Secular One', sans-serif;
     display: inline-block;
-    width: 30%;
+    width: 30vw;
     height: 33vw;
     background-color: #3f3f3f;
     border-radius: 20px;
     color: white;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1vw;
+    font-size: 1.3vw;
 }
 
 #review1{
