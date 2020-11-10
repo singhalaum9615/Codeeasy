@@ -757,14 +757,16 @@ section{
     width: 100%;
     height: 46vw;
     margin: 2vw 0;
+    display:block;
 }
 
 
 .contact h1{
     color: rgb(219, 228, 140);
-    padding-left: 7vw;
+    text-align: center;
     font-size: 6vw;
     font-family: 'Dosis', sans-serif;
+    display: block;
 }
 
 .pageclip-form{
