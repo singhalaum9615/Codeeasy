@@ -884,6 +884,7 @@ footer {
 
 #facebook{
     color: white;
+    display: inline-block;
 }
 
 #facebook:hover{
@@ -892,6 +893,7 @@ footer {
 
 #instagram{
     color: white;
+    display: inline-block;
 }
 
 #instagram:hover{
@@ -900,6 +902,7 @@ footer {
 
 #youtube{
     color: white;
+    display: inline-block;
 }
 
 #youtube:hover{
@@ -908,6 +911,7 @@ footer {
 
 #twitter{
     color: white;
+    display: inline-block;
 }
 
 #twitter:hover{
