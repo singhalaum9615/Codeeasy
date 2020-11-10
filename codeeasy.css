@@ -754,19 +754,11 @@ section{
 }
 
 .contact{
-    /*background-image: url(./img/map1.png);*/
     width: 100%;
     height: 46vw;
-    background-size: cover;
+    margin: 2vw 0;
 }
 
-.contact img{
-    width: 35vw;
-    display: flex;
-    position: relative;
-    left: 60%;
-    bottom: 75%;
-}
 
 .contact h1{
     color: rgb(219, 228, 140);
@@ -864,8 +856,8 @@ section{
 
 footer {
     width: 100%;
-    height: 13vw;
-    margin-top: 3vw;
+    height: 10vw;
+    margin-top: 5vw;
 }
 #foot {
     width: 70%;
