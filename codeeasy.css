@@ -775,6 +775,7 @@ section{
     font-size: 2vw;
     font-family: 'Dosis', sans-serif;
     display: inline-block;
+    border-right: 1px soild yellow;
 }
 
 .name{
