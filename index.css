@@ -1330,6 +1330,7 @@ nav .topnav .icon {
 
 .conts1 img{
     height: 90%;
+    width: auto;
     display: inline-block;
 }
 
