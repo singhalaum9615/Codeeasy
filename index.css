@@ -1,0 +1,1393 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color:hsl(10, 89%, 80%);
+    color: black !important;
+}
+
+/*===============================================================================
+===================================== NAV BAR ===================================
+===================================== BEGINS ====================================*/
+
+nav{
+    background:hsl(10, 89%, 80%);
+    height: 5vw;
+    width: 100%;
+    position: fixed;
+    z-index: 15;
+}
+
+#logo{
+    height: 94%;
+    margin-left: 2vw;
+}
+
+.topnav{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav .topnav a{
+    display: inline-block;
+    margin: 1.5vw 5px;
+    color: black;
+    font-size: 1.3vw;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+nav .topnav a:hover:not(:first-child){
+    background: #1b9bff;
+    transition: .2s;
+}
+
+nav .topnav .icon {
+    display: none;
+    font-size: 3.5vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1100px){
+    nav{
+        height: 7vw;
+        width: 100%;
+        position: fixed;
+        z-index: 15;
+    }
+    #logo{
+      height: 100%;
+    }
+    nav .topnav a{
+      font-size: 1.5vw;
+    }
+
+    nav .topnav a{
+        margin: 2vw 5px;
+    }
+}
+
+@media screen and (max-width: 870px){
+    nav{
+        
+        height: 13vw;
+        width: 100%;
+        position: fixed;
+        z-index: 15;
+    }
+
+    #logo{
+        height: 100%;
+    }
+
+    nav .topnav a{
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+        margin: 4vw;
+    }
+    
+    .topnav.responsive {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(47, 62, 88);
+        height: 80vw;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 2vw;
+        top: 1vw;
+    }
+    .topnav.responsive a:not(:first-child) {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 60vw;
+        height: 10vw;
+        font-size: 7vw;
+        background-color: rgb(47, 62, 88);
+        padding: 1vw;
+        position: relative;
+        top: 10vw;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+/*================================================================================
+===================================== MAIN BODY ==================================
+===================================== BEGINS =====================================*/
+
+#main {
+    width: 100%;
+    height: 35vw;
+}
+
+#show{
+    display: flex;
+    position: absolute;
+    top: 10vw;
+    left: 2vw;
+    flex-direction: column;
+    font-family: 'Rubik Mono One', sans-serif;
+    
+}
+
+#form1 button{
+    cursor: pointer;
+}
+
+#show1{font-size: 6vw;}
+
+#start{
+    margin-top: 3%;
+    font-size: 1.2vw;
+    
+    font-family: 'Rubik Mono One', sans-serif;
+    margin-left: 1%;
+}
+
+#cont1{
+    margin: 0.7vw;
+    font-size: 1.5vw;
+    padding: 0.4vw;
+    border-radius: 10px;
+    border: 0px solid;
+    background-color: rgb(236, 241, 184);
+}
+
+#cont2{
+    margin: 0.7vw;
+    font-size: 1.5vw;
+    padding: 0.4vw;
+    border-radius: 10px;
+    border: 0px solid;
+    background-color: rgb(81, 205, 50); 
+}
+
+.cody{
+    width: 80%;
+    border-top: 1px solid white;
+    margin: 5vw auto;
+}
+
+.cod{
+    display: inline-block;
+    width: 26vw;
+    height: auto;
+    float: right;
+    margin: 3vw 2vw;
+    padding-top: 2vw;
+}
+
+.thought{
+    display: inline-block;
+    height: 30vw;
+    width: auto;
+}
+
+.head1{
+    font-family: 'Secular One', sans-serif;
+    
+    margin: 4% auto;
+    width: 86%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vw;
+    border-top: 1px solid white;
+    font-size: 4.5vw;
+}
+
+.para1{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0.3vw auto;
+    font-size: 2.7vw;
+    
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 6vw;
+    border-bottom: 1px solid white;
+}
+
+@media screen and (max-width:1100px){
+
+    #main {
+        width: 100%;
+        height: 44vw;
+    }
+
+    #show1{
+        font-size: 7vw;
+    }
+
+    #show{
+        display: flex;
+        position: absolute;
+        top: 13vw;
+        left: 3vw;
+        flex-direction: column;
+        font-family: 'Rubik Mono One', sans-serif;
+        
+    }
+
+    #start{
+        margin-top: 2%;
+        font-size: 2vw;
+        
+        font-family: 'Rubik Mono One', sans-serif;
+        margin-left: 1%;
+    }
+
+    #cont1{
+        margin: 0.7vw;
+        font-size: 2.3vw;
+        padding: 0.4vw;
+        border-radius: 8px;
+        border: 0px solid;
+        background-color: rgb(236, 241, 184);
+    }
+    
+    #cont2{
+        margin: 0.7vw;
+        font-size: 2.3vw;
+        padding: 0.4vw;
+        border-radius: 8px;
+        border: 0px solid;
+        background-color: rgb(81, 205, 50); 
+    }
+}
+
+@media screen and (max-width:870px){
+
+    #main {
+        width: 100%;
+        height: 58vw;
+    }
+
+    #show1{
+        font-size: 8vw;
+    }
+
+    #show{
+        display: flex;
+        position: absolute;
+        top: 18vw;
+        left: 3vw;
+        flex-direction: column;
+        font-family: 'Rubik Mono One', sans-serif;
+        
+    }
+
+    #start{
+        margin-top: 2%;
+        font-size: 3vw;
+        
+        font-family: 'Rubik Mono One', sans-serif;
+        margin-left: 1%;
+    }
+
+    #cont1{
+        margin: 0.7vw;
+        font-size: 3.5vw;
+        padding: 0.8vw;
+        border-radius: 5px;
+        border: 0px solid;
+        background-color: rgb(236, 241, 184);
+    }
+    
+    #cont2{
+        margin: 0.7vw;
+        font-size: 3.5vw;
+        padding: 0.8vw;
+        border-radius: 5px;
+        border: 0px solid;
+        background-color: rgb(81, 205, 50); 
+    }
+
+    .cody{
+        width: 90%;
+        border-top: 1px solid white;
+        margin: 7vw auto;
+    }
+    
+    .cod{
+        display: inline-block;
+        width: 25vw;
+        height: auto;
+        float: right;
+        margin: 3vw 2vw;
+        padding-top: 2vw;
+    }
+    
+    .thought{
+        display: inline-block;
+        height: 30vw;
+        width: auto;
+        margin: 3vw 2vw;
+    }
+}
+
+/*=====================================================================================
+===================================== COURSE SECTION ==================================
+======================================== BEGINS =======================================*/
+
+
+.course_head{
+    font-size: 5vw;
+
+    text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.course{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 1vw;
+    text-align: center;
+}
+
+#mainif{
+    display: flex;
+    height: 98%;
+    width: 90%;
+    background-color: rgb(57, 37, 238);
+    border-radius: 25px;
+    height: 33vw;
+    align-items: center;
+}
+
+#marks{
+    width: 20%;
+    height: 90%;
+    font-size: 1.5vw;
+    border-right: 1px solid rgb(77, 79, 211);
+    color: #fff;
+}
+
+.add{
+    margin: 1.5vw auto;
+    cursor: pointer;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.8vw;
+}
+.add span{
+    border-bottom: 1px solid;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.screen{
+    background-color: white;
+    height: 29vw;
+    width: 69vw;
+    margin-left: 1vw;
+    font-size: 2vw;
+    border-radius: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.screen img{
+    height: 6vw;
+    display: inline-block;
+    position: relative;
+    top: 1vw;
+    right: 2vw;
+}
+.screen h2{
+    height: 6vw;
+    display: inline-block;
+    position: relative;
+    top: -1vw;
+}
+.screen p{
+    font-size: 1.5vw;
+    padding: 0.4vw;
+}
+.screen span{
+    padding-right: 3vw;
+}
+.screen a{
+    color: black;
+    background-color: rgb(145, 185, 65);
+    padding: 1vw;
+    border-radius: 25px;
+    transition: 0.2s;
+}
+
+.screen a:hover{
+    color: black;
+    background-color: rgb(145, 185, 65);
+    padding: 1.4vw;
+    border-radius: 25px;
+    box-shadow: 0px 0px 16px #888888;
+}
+
+#screen2{
+    display: none;
+}
+
+#screen3{
+    display: none;
+}
+
+#screen4{
+    display: none;
+}
+
+#screen4 h2{
+    position: relative;
+    top: 2vw;
+}
+
+@media screen and (max-width:870px){
+    #mainif{
+        display: flex;
+        height: 98%;
+        width: 90%;
+        background-color: rgb(57, 37, 238);
+        border-radius: 25px;
+        height: 50vw;
+        align-items: center;
+    }
+    
+    #marks{
+        width: 25%;
+        height: 90%;
+        font-size: 2.5vw;
+        border-right: 1px solid rgb(77, 79, 211);
+        color: #fff;
+    }
+    
+    .add{
+        margin: 1.5vw auto;
+        cursor: pointer;
+        font-family: 'Balsamiq Sans', cursive;
+        font-size: 2.8vw;
+    }
+    .add span{
+        border-bottom: 1px solid;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    
+    .screen{
+        background-color: white;
+        height: 48vw;
+        width: 65vw;
+        margin-left: 1vw;
+        font-size: 2.5vw;
+        border-radius: 20px;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    
+    .screen img{
+        height: 8vw;
+        display: inline-block;
+        position: relative;
+        top: 1vw;
+        right: 2vw;
+    }
+    .screen h2{
+        height: 6vw;
+        display: inline-block;
+        position: relative;
+        top: -1vw;
+        font-size: 5vw;
+    }
+    .screen p{
+        font-size: 2.5vw;
+        padding: 0.4vw;
+    }
+    .screen span{
+        padding-right: 3vw;
+    }
+    .screen a{
+        color: black;
+        background-color: rgb(145, 185, 65);
+        padding: 1vw;
+        border-radius: 25px;
+    }
+    
+    #screen2{
+        display: none;
+    }
+    
+    #screen3{
+        display: none;
+    }
+    
+    #screen4{
+        display: none;
+    }
+    
+    #screen4 h2{
+        position: relative;
+        top: 2vw;
+    }
+}
+
+/*=====================================================================================
+===================================== EVENTS SECTION ==================================
+======================================== BEGINS =======================================*/
+
+.event{
+    display: flex;
+    margin-top: 5px;
+    width: 100%;
+    height: 40vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#event1{
+    font-family: 'Secular One', sans-serif;
+    display: inline-block;
+    width: 30vw;
+    height: 33vw;
+    background-color: #3f3f3f;
+    border-radius: 20px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1vw;
+    font-size: 1.3vw;
+    
+}
+
+#event2{
+    font-family: 'Secular One', sans-serif;
+    display: inline-block;
+    width: 30vw;
+    height: 33vw;
+    background-color: #3f3f3f;
+    border-radius: 20px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1vw;
+    font-size: 1.3vw;
+}
+
+#event3{
+    font-family: 'Secular One', sans-serif;
+    display: inline-block;
+    width: 30vw;
+    height: 33vw;
+    background-color: #3f3f3f;
+    border-radius: 20px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1vw;
+    font-size: 1.3vw;
+}
+
+#event1 img, #event2 img, #event3 img{
+    width: 10vw;
+}
+
+#event1 span, #event2 span, #event3 span{
+    font-size: 1.7vw;
+}
+
+#eve{
+    width: 80%; 
+    border-top: 1px solid white ; 
+    padding-top: 2vw; 
+    margin: 2vw auto; 
+     
+    font-size: 4vw; 
+    text-align: center; 
+    font-family: 'Secular One', sans-serif;
+}
+
+@media screen and (max-width: 870px){
+    .event{
+        display: flex;
+        margin-top: 5px;
+        width: 100%;
+        height: 187vw;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #eve{
+        width: 80%; 
+        border-top: 1px solid white ; 
+        padding-top: 2vw; 
+        margin: 2vw auto; 
+         
+        font-size: 6vw; 
+        text-align: center; 
+        font-family: 'Secular One', sans-serif;
+    }
+
+    #event1 img, #event2 img, #event3 img{
+        width: 15vw;
+    }
+
+    #event1 span, #event2 span, #event3 span{
+        font-size: 3vw;
+        padding-bottom: 0.4vw;
+    }
+    
+    #event1{
+        font-family: 'Secular One', sans-serif;
+        display: inline-block;
+        width: 65vw;
+        height: 59vw;
+        background-color: #3f3f3f;
+        border-radius: 20px;
+        color: white;
+        justify-content: center;
+        text-align: center;
+        padding-top: 1vw;
+        font-size: 2.6vw;
+        
+    }
+    
+    #event2{
+        font-family: 'Secular One', sans-serif;
+        display: inline-block;
+        width: 65vw;
+        height: 59vw;
+        background-color: #3f3f3f;
+        border-radius: 20px;
+        color: white;
+        justify-content: center;
+        text-align: center;
+        padding-top: 1vw;
+        font-size: 2.6vw;
+    }
+    
+    #event3{
+        font-family: 'Secular One', sans-serif;
+        display: inline-block;
+        width: 65vw;
+        height: 59vw;
+        background-color: #3f3f3f;
+        border-radius: 20px;
+        color: white;
+        justify-content: center;
+        text-align: center;
+        padding-top: 1vw;
+        font-size: 2.6vw;
+    }
+}
+
+/*=====================================================================================
+===================================== REVIEW SECTION ==================================
+======================================== BEGINS =======================================*/
+
+#review1{
+    font-family: 'Secular One', sans-serif;
+    width: 45%; 
+    height: 28vw; 
+    border-radius: 25px; 
+    margin: auto; 
+    margin-top: 3vw;
+    background-color: white !important;
+    padding: 2vw;
+    text-align: center;   
+    font-size: 1.6vw; 
+}
+
+.rate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5vw;
+}
+
+.h1{
+    display: flex;
+    float: left;
+    margin-left: 3vw;
+    font-size: 3vw; 
+    text-align: center;
+}
+
+.rate1{
+    display: flex;
+    width: 9.4vw;
+    height: 0.5vw;
+    background-color: orange;
+    border-radius: 25px;
+    z-index: 2;
+    margin-left: 2vw;
+}
+
+.background1{
+    display: flex;
+    position: relative;
+    width: 10vw;
+    height: 0.5vw;
+    background-color: grey;
+    border-radius: 25px;
+    left: -7.7vw;
+}
+
+.h{
+    display: flex;
+    position: relative;
+    left: -5.5vw;
+}
+
+#review2{
+    font-family: 'Secular One', sans-serif;
+    width: 45%; 
+    height: 28vw; 
+    border-radius: 25px; 
+    margin: auto; 
+    margin-top: 3vw;
+    background-color: white !important;
+    padding: 2vw;
+    text-align: center;   
+    font-size: 1.6vw;
+}
+
+.rate2{
+    display: flex;
+    width: 10vw;
+    height: 0.5vw;
+    background-color: orange;
+    border-radius: 25px;
+    z-index: 2;
+    margin-left: 2vw;
+}
+
+.background2{
+    display: flex;
+    position: relative;
+    width: 9vw;
+    height: 0.5vw;
+    background-color: grey;
+    border-radius: 25px;
+    left: -8.9vw;
+}
+
+#review3{
+    font-family: 'Secular One', sans-serif;
+    width: 45%; 
+    height: 28vw; 
+    border-radius: 25px; 
+    margin: auto; 
+    margin-top: 3vw;
+    background-color: white !important;
+    padding: 2vw;
+    text-align: center;   
+    font-size: 1.6vw;
+}
+
+.rate3{
+    display: flex;
+    width: 8vw;
+    height: 0.5vw;
+    background-color: orange;
+    border-radius: 25px;
+    z-index: 2;
+    margin-left: 2vw;
+}
+
+.background3{
+    display: flex;
+    position: relative;
+    width: 10vw;
+    height: 0.5vw;
+    background-color: grey;
+    border-radius: 25px;
+    left: -7.9vw;
+}
+
+/* ================================ CAROUSEL - SLIDER ================================= */
+
+.container{
+    margin-top: 4vw;
+}
+
+.carousel{
+    position:relative;
+    overflow: hidden;
+}
+
+.carousel-inner{
+    width: 100%;
+    overflow: hidden;
+    height: 35vw;
+}
+
+.carousel-inner>.item{
+    position:relative;
+    display:none;
+    -webkit-transition:.6s ease-in-out left;
+    -o-transition:.6s ease-in-out left;
+    transition:.6s ease-in-out left;
+}
+
+.carousel-inner>.item>a>img,.carousel-inner>.item>img{
+    line-height:1
+}
+
+@media all and (transform-3d),(-webkit-transform-3d){
+    .carousel-inner>.item{
+        -webkit-transition:-webkit-transform .6s ease-in-out;
+        -o-transition:-o-transform .6s ease-in-out;
+        transition:-webkit-transform .6s ease-in-out;
+        transition:transform .6s ease-in-out;
+        transition:transform .6s ease-in-out, -webkit-transform .6s ease-in-out, -o-transform .6s ease-in-out;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-perspective:1000px;
+        perspective:1000px;
+        transition-timing-function: 2s;
+    }
+    
+    .carousel-inner>.item.active.right,.carousel-inner>.item.next{
+        -webkit-transform:translate3d(100%,0,0);
+        transform:translate3d(100%,0,0);
+        left:0
+    }
+    
+    .carousel-inner>.item.active.left,.carousel-inner>.item.prev{
+        -webkit-transform:translate3d(-100%,0,0);
+        transform:translate3d(-100%,0,0);
+        left:0
+    }
+    
+    .carousel-inner>.item.active,.carousel-inner>.item.next.left,.carousel-inner>.item.prev.right{
+        -webkit-transform:translate3d(0,0,0);
+        transform:translate3d(0,0,0);
+        left:0
+    }
+}
+
+.carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev{
+    display:block;
+}
+
+.carousel-inner>.active{
+    left:0
+}
+
+.carousel-inner>.next,.carousel-inner>.prev{
+    position:absolute;
+    top:0;
+    width:100%;
+}
+
+.carousel-inner>.next{
+    left:100%
+}
+
+.carousel-inner>.prev{
+    left:-100%
+}
+
+.carousel-inner>.next.left,.carousel-inner>.prev.right{
+    left:0
+}
+
+.carousel-inner>.active.left{
+    left:-100%
+}
+
+.carousel-inner>.active.right{
+    left:100%
+}
+
+.carousel-control{
+    position:absolute;
+    top:40%;
+    bottom:0;
+    left:0;
+    width:10%;
+    height: 18%;
+    font-size:20px;
+    color:#fff;
+    text-align:center;
+    text-shadow:0 1px 2px rgba(255,255, 255,.6);
+    background-color:rgba(255,255, 255,0);
+    filter:alpha(opacity=50);
+    opacity:.5
+}
+
+.carousel-control.left{
+    background-image: url("./img/left.png");
+    background-position: center;
+    background-size: cover;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat:repeat-x;
+    
+}
+
+.carousel-control.right{
+    right:0;
+    left:auto;
+    background-image: url("./img/right.png");
+    background-position: center;
+    background-size: cover;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat:repeat-x;
+    
+}
+
+.carousel-control:focus,.carousel-control:hover{
+    color:#fff;
+    text-decoration:none;
+    outline:0;
+    filter:alpha(opacity=90);
+    opacity:.9
+}
+
+.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next,.carousel-control .icon-prev{
+    position:absolute;
+    top:50%;
+    z-index:5;
+    display:inline-block;
+    margin-top:-10px
+}
+
+.carousel-control .glyphicon-chevron-left,.carousel-control .icon-prev{
+    left:50%;
+    margin-left:-10px
+}
+
+.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next{
+    right:50%;
+    margin-right:-10px
+}
+
+.carousel-control .icon-next,.carousel-control .icon-prev{
+    width:20px;
+    height:20px;
+    font-family:serif;
+    line-height:1
+}
+
+.carousel-control .icon-prev:before{
+    content:"\2039"
+}
+
+.carousel-control .icon-next:before{
+    content:"\203a"
+}
+
+.carousel-indicators{
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    z-index:9;
+    width:60%;
+    padding-left:0;
+    margin-left:-30%;
+    text-align:center;
+    list-style:none
+}
+
+.carousel-indicators li{
+    display:inline-block;
+    width:0.7vw;
+    height:0.7vw;
+    margin:1px;
+    text-indent:-999px;
+    cursor:pointer;
+    background-color:#000;
+    background-color:rgba(0,0,0,0);
+    border:1px solid #fff;
+    border-radius:10px
+}
+
+.carousel-indicators .active{
+    width:0.9vw;height: 0.9vw;
+    margin:0;background-color:#fff
+}
+/* ================================ CAROUSEL - SLIDER - END ================================= */
+
+@media screen and (max-width: 870px){
+    .item{
+        height: 45vw;
+    }
+
+    .carousel-inner{
+        width: 100%;
+        overflow: hidden;
+        height: 40vw;
+    }
+
+    #review1{
+        font-family: 'Secular One', sans-serif;
+        width: 70%; 
+        height: 33vw; 
+        border-radius: 25px; 
+        margin: auto; 
+        margin-top: 2vw;
+        background-color: white !important;
+        padding: 2vw;
+        text-align: center;   
+        font-size: 2.2vw; 
+    }
+
+    #review2{
+        font-family: 'Secular One', sans-serif;
+        width: 70%; 
+        height: 33vw; 
+        border-radius: 25px; 
+        margin: auto; 
+        margin-top: 3vw;
+        background-color: white !important;
+        padding: 2vw;
+        text-align: center;   
+        font-size: 2.2vw;
+    }
+
+    #review3{
+        font-family: 'Secular One', sans-serif;
+        width: 70%; 
+        height: 33vw; 
+        border-radius: 25px; 
+        margin: auto; 
+        margin-top: 3vw;
+        background-color: white !important;
+        padding: 2vw;
+        text-align: center;   
+        font-size: 2.2vw;
+    }
+}
+
+/*======================================================================================
+===================================== CONTACT SECTION ==================================
+======================================== BEGINS ========================================*/
+
+.contact{
+    width: 100%;
+    margin: 1.3vw auto;
+    display: block;
+}
+
+.contact h1{
+    
+    text-align: center;
+    font-size: 6vw;
+    font-family: 'Dosis', sans-serif;
+    display: block;    
+}
+
+.formspree-form{
+    padding-left: 7vw;
+    padding-right: 1vw;
+    
+    font-size: 2vw;
+    font-family: 'Dosis', sans-serif;
+    display: inline-block;
+    border-right: 1px solid ;
+}
+
+.name{
+    font-size: 2vw;
+}
+
+.name1{
+    font-size: 2vw;
+    
+    background-color: rgba(0,0,0,0);
+    border-bottom: 1px solid ;
+    border-top: 0px solid ;
+    border-left: 0px solid;
+    border-right: 0px solid;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+
+.email1{
+    font-size: 2vw;
+    
+    background-color: rgba(0,0,0,0);
+    border-bottom: 1px solid ;
+    border-top: 0px solid ;
+    border-left: 0px solid ;
+    border-right: 0px solid ;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 3px;    
+}
+
+.phone1{
+    font-size: 2vw;
+    
+    background-color: rgba(0,0,0,0);
+    border-bottom: 1px solid ;
+    border-top: 0px solid ;
+    border-left: 0px solid ;
+    border-right: 0px solid ;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+
+.message{
+    display: inline-block;
+    position: relative;
+    bottom: 8vw;
+}
+
+.message1{
+    display: inline-block;
+    font-size: 2vw;
+    background-color: rgba(0,0,0,0);
+    border-bottom: 1px solid ;
+    border-top: 1px solid;
+    border-left: 1px solid ;
+    border-right: 1px solid ;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 3px; 
+    height: 10vw;
+    width: 30vw;
+    border-radius: 5px;
+    resize: none;
+}
+
+.submit{
+    margin: 20px 40px;
+    width: 9vw;
+    height: 4vw;
+    font-size: 2vw;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 1px solid;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.submit:hover{
+    margin: 20px 40px;
+    width: 9vw;
+    height: 4vw;
+    font-size: 2vw;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 1px solid hsl(10, 89%, 70%);
+    background-color: hsl(10, 89%, 77%);
+}
+
+#status{
+    display: flex;
+    float: right;
+    margin-right: 1vw;
+    margin-top: 1.2vw;  
+}
+
+.conts{
+    display: flex;
+    float: right;
+    flex-direction: column;
+    margin-right: 13vw;
+    margin-top: 5vw;
+}
+
+.conts1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17vw;
+    height: 3.5vw;
+    border-radius: 15px;
+    border: 0 solid;
+    font-size: 1.2vw;
+    margin: 1.5vw;
+    text-align: center;
+}
+
+.conts1 img{
+    height: 90%;
+    display: inline-block;
+}
+
+#conts button{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 870px){
+    #conts{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2vw;
+        margin-left: 3vw;
+    }
+    #but{
+        width: 70vw;
+        height: 9vw;
+        border-radius: 9px;
+        border: 0 solid;
+        font-size: 5vw;
+        margin: 1vw 11vw;
+    }
+    #contacts h1{
+        
+        text-align: center;
+        font-size: 11vw;
+        font-family: 'Dosis', sans-serif;
+        display: block;
+    }
+
+    #form-group, #name2, #email2, #phone2, #message2{
+        font-size: 4vw;
+    }
+    
+    #my-form{
+        padding-left: 7vw;
+        padding-right: 1vw;
+        
+        font-size: 4vw;
+        font-family: 'Dosis', sans-serif;
+        display: block;
+        margin-top: 2vw;
+        border-right: 0px;
+    }
+
+    #contacts{
+        width: 100%;
+        margin: 1.3vw 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #name, #email, #phone, #message{
+        font-size: 3vw;
+        width: 47vw;
+    }
+
+    #my-form-button{
+        font-size: 5vw;
+        width: 20vw;
+        height: 7vw;
+        border-radius: 15px;
+    }
+
+    #message{
+        height: 20vw;
+    }
+    #message2{
+        bottom: 15vw;
+    }
+}
+
+/*======================================================================================
+===================================== FOOTER SECTION ===================================
+======================================== BEGINS ========================================*/
+
+footer {
+    width: 100%;
+    height: 10vw;
+    margin-top: 5vw;
+    display: block;
+}
+#foot {
+    width: 76%;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 1.5vw;
+    border-top: 1px solid ;
+    padding-top: 1.7vw;
+}
+#foot a{
+    margin: 15px 2vw;
+    display: inline-block !important;
+}
+.foot p a {
+    color: yellow;
+    background-color: yellow;
+}
+
+#facebook{
+    background-image: url("./img/facebook.png");
+    padding: 1.1vw;
+    background-size: cover;
+}
+#instagram{
+    background-image: url("./img/instagram.png");
+    padding: 1.1vw;
+    background-size: cover;
+}
+#youtube{
+    background-image: url("./img/youtube.png");
+    padding: 1.1vw;
+    background-size: cover;
+}
+#linkedin{
+    background-image: url("./img/linkedin.png");
+    padding: 1.1vw;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1000px){
+    #facebook{
+        background-image: url("./img/facebook.png");
+        padding: 2.6vw;
+        background-size: cover;
+    }
+    #instagram{
+        background-image: url("./img/instagram.png");
+        padding: 2.6vw;
+        background-size: cover;
+    }
+    #youtube{
+        background-image: url("./img/youtube.png");
+        padding: 2.6vw;
+        background-size: cover;
+    }
+    #linkedin{
+        background-image: url("./img/linkedin.png");
+        padding: 2.6vw;
+        background-size: cover;
+    }
+    footer {
+        width: 100%;
+        height: 5vw;
+        margin-top: 5vw;
+        display: block;
+    }
+    #foot {
+        width: 70%;
+        margin: 10px auto;
+        text-align: center;
+        
+        font-size: 1.5vw;
+    }
+    #foot a{
+        margin: 10px 2.5vw;
+        display: inline-block !important;
+    }
+    #foot {
+        width: 70%;
+        margin: 30px auto;
+        text-align: center;
+        
+        font-size: 2.3vw;
+        margin-bottom: 10px;
+    }
+}
