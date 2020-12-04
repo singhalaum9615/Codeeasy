@@ -15,7 +15,7 @@ body{
 ===================================== BEGINS ====================================*/
 
 nav{
-    background-color:white;
+    background-color:white !important;
     height: 5vw;
     width: 100%;
     position: fixed;
