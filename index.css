@@ -6,7 +6,6 @@
 }
 
 body{
-    background: white !important;
     color: black !important;
 }
 
@@ -15,6 +14,7 @@ body{
 ===================================== BEGINS ====================================*/
 
 nav{
+    background: white !important;
     height: 5vw;
     width: 100%;
     position: fixed;
